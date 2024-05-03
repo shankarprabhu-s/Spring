@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <bean class="com.springDemo4.Employee" name="emp1">
+    <property name="ename">
+    <value>Shankar Prabhu S</value>
+    </property>
+    <property name="phones">
+    <list>
+    <value>123</value>
+    <value>321</value>
+    <value>99</value>
+    </list>
+    </property>
+    <property name="addresses">
+    <set>
+    <value>Shivamogga</value>
+    <value>Nitte</value>
+    <value>Pune</value>
+    </set>
+    </property>
+    <property name="edetails">
+    <map>
+    <entry key="12" value="IT"></entry>
+    <entry key="13" value="HR"></entry>
+    </map>
+    </property>
+    </bean>
+</beans>
